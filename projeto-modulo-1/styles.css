@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu__dropdown {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 140px 36px 140px;
+    width: 100%;
+    height: 122px;
+}
+
+.logo {
+    width: 180px;
+    height: 49px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav__header--ul {
+    display: flex;
+    justify-content: space-between;
+    width: 552px;
+    height: 30px;
+}
+
+.nav__header--ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 20px;
+}
+
+.select {
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+}
+
+.first__section {
+    width: 100%;
+    height: 780px;
+    background: transparent url('../projeto-modulo-1/assets/laranja\ azul\ recorte.png') 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first__section--container {
+    height: 96px;
+    margin-bottom: 60px;
+}
+
+.first__section--container-h1 {
+    font-size: 78px;
+    color: white;
+    padding-left: 140px;
+
+}
+
+.first__section--sac {
+    font-size: 35px;
+    color: white;
+    padding-left: 140px;
+}
+
+.products__section {
+    width: calc(100% - 140px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 140px;
+    margin-top: 90px;
+    margin-bottom: 86px;
+}
+
+.products__section img {
+    width: 398px;
+    height: 398px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 126px;
+    background-color: #F6F6F6;
+    padding: 45px 0 45px 140px;
+}
+
+.socialMedia__container {
+    width: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 170px;
+}
+
+.credits {
+    display: flex;
+}
+
+.credits h3 {
+    font-size: 20px;
+}
+
+.credits__text {
+   font-size: 15px; 
+   width: 538px;
+   margin-left: 24px;
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 0;
+        height: 27px;
+    }
+
+    .logo {
+        font-size: 18px;
+        height: 22px;
+    }
+
+    .menu__dropdown {
+        width: 111px;
+        height: 27px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    hr {
+        width: 20%;
+    }
+
+    .nav__header {
+        display: none;
+        
+    }
+
+    .first__section {
+        justify-content: flex-end;
+        height: 640px;
+        padding: 0 0 32px 38px;
+        background-position: 82%;
+    }
+
+    .first__section--container {
+        width: 249px;
+        height: 183px;
+        margin-bottom: 18px;
+    }
+
+    .first__section--container-h1 {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .first__section--sac {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .products__section {
+        margin: 0;
+        width: 375px;
+        justify-content: center;
+        margin-top: 66px;
+    }
+
+    .products__section img {
+        height: 300px;
+        width: 300px;
+    }
+    
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 136px;
+        padding: 0;
+        margin-top: 32px;
+        margin-bottom: 15px;
+    }
+
+    .socialMedia__container {
+        height: 40px;
+        width: 302px;
+        margin: 0;
+        justify-content: space-around;
+        background-color: #7FDBD4;
+        margin-bottom: 16px;
+    }
+
+    .socialMedia__container img {
+        height: 22px;
+    }
+
+    .credits {
+        flex-direction: column;
+        width: 302px;
+    }
+
+    .credits h3 {
+        font-size: 10px;
+    }
+
+    .credits__text {
+        font-size: 10px;
+        width: 188px;
+        margin: 0;
+    }
+}
